@@ -190,7 +190,7 @@ def stream_status_loop():
     while True:
         stream_online = is_stream_online()
 
-        if (stream_online or DEBUG MODE) and not stream_greeted:
+        if (stream_online or DEBUG_MODE) and not stream_greeted:
             sock.send(f"PRIVMSG {CHANNEL} :Здравствуйте, Нана 🌸\r\n".encode())
             stream_greeted = True
 
