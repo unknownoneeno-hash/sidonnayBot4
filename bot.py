@@ -7,7 +7,7 @@ import os
 import re
 
 # ================= settings =================
-DEBUG_MODE = True
+DEBUG_MODE = False
 
 CAPS_MIN_LETTERS = 44
 CAPS_PERCENT = 0.7
