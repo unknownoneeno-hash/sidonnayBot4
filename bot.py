@@ -8,17 +8,17 @@ import re
 
 # ================= settings =================
 
-CAPS_MIN_LETTERS = 44
+CAPS_MIN_LETTERS = 24
 CAPS_PERCENT = 0.7
 CAPS_TIMEOUT = 60
 
 BANNED_WORDS = [
     "пидор","пидорас","пидарас","педик","гомик","гомосек","куколд",
-    "чурка","узкоглазый","москаль","хохол","жиды","негр","ниггер",
-    "даун","дауны","дауна","пидики","куколды","куколдов","педиков","пидоров",
-    "черномазый","черномазы","негров","нигеров","кацап","кацапы","кацапов","глиномес",
-    "глиномесы","глином","пендосы","пендосов","пендостан","жидов","пидрила","пидармот",
-    "пидорашка","черножопый","чуркобес","аулавец","рашист","инцел","негритенок",
+    "чурка","узкоглазый","москаль","хохол","жид","негр","ниггер",
+    "даун","дауны","дауна","педики","куколды","куколдов","педиков","пидоров",
+    "черномазый","черномазые","негров","нигеров","кацап","кацапы","кацапов","глиномес",
+    "глиномесы","глиномесов","пендосы","пендосов","пендостан","жидов","пидрила","пидармот",
+    "пидорашка","черножопый","чуркобес","аулавец","рашист","инцел","негритенок", "жиды",
 ]
 
 WARN_RESET_TIME = 600
@@ -257,13 +257,33 @@ while True:
 
     if msg == "!tg":
         sock.send(f"PRIVMSG {CHANNEL} :https://t.me/sidonnay\r\n".encode())
+    elif msg == "!telegram":
+        sock.send(f"PRIVMSG {CHANNEL} :https://t.me/sidonnay\r\n".encode())
+    elif msg == "!тг":
+        sock.send(f"PRIVMSG {CHANNEL} :https://t.me/sidonnay\r\n".encode())
+    elif msg == "!телеграм":
+        sock.send(f"PRIVMSG {CHANNEL} :https://t.me/sidonnay\r\n".encode())
     elif msg == "!boosty":
+        sock.send(f"PRIVMSG {CHANNEL} :записи просмотровых https://boosty.to/sidonnay PopCorn\r\n".encode())
+    elif msg == "!бусти":
         sock.send(f"PRIVMSG {CHANNEL} :записи просмотровых https://boosty.to/sidonnay PopCorn\r\n".encode())
     elif msg == "!youtube":
         sock.send(f"PRIVMSG {CHANNEL} :записи стримоу https://youtube.com/@sidonnay TPFufun\r\n".encode())
+    elif msg == "!ютуб":
+        sock.send(f"PRIVMSG {CHANNEL} :записи стримоу https://youtube.com/@sidonnay TPFufun\r\n".encode())
     elif msg == "!instagram":
         sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
+    elif msg == "!inst":
+        sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
+    elif msg == "!инст":
+        sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
+    elif msg == "!инста":
+        sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
+    elif msg == "!инстаграм":
+        sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
     elif msg == "!фильм":
-        sock.send(f"PRIVMSG {CHANNEL} :Человек Паук 1 PopCorn\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :Приключения муми-троллей (сериал, 1990-1992) PopCorn\r\n".encode())
+    elif msg == "!кино":
+        sock.send(f"PRIVMSG {CHANNEL} :Приключения муми-троллей (сериал, 1990-1992) PopCorn\r\n".encode())
     elif msg == "!озвучка":
         sock.send(f"PRIVMSG {CHANNEL} :https://inlnk.ru/DB36GQ\r\n".encode())
