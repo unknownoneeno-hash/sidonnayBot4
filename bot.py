@@ -212,7 +212,7 @@ while True:
         sock.send("PONG :tmi.twitch.tv\r\n".encode())
         continue
 
-    if "PRIVMSG" not in data:
+    if not stream_online or "PRIVMSG" not in data:
         continue
 
     try:
