@@ -41,6 +41,7 @@ PORT = 443
 BOT_NICK = os.getenv("BOT_NICK")
 OAUTH_TOKEN = os.getenv("OAUTH_TOKEN")
 CHANNEL = os.getenv("CHANNEL")
+CHANNEL_IRC = f"#{CHANNEL}"
 
 CLIENT_ID = os.getenv("CLIENT_ID")
 ACCESS_TOKEN = os.getenv("ACCESS_TOKEN")
@@ -60,6 +61,7 @@ sock.send("CAP REQ :twitch.tv/commands twitch.tv/tags twitch.tv/membership\r\n".
 sock.send(f"PASS {OAUTH_TOKEN}\r\n".encode())
 sock.send(f"NICK {BOT_NICK}\r\n".encode())
 sock.send(f"JOIN {CHANNEL}\r\n".encode())
+sock.send(f"JOIN {CHANNEL_IRC}\r\n".encode())
 
 print("бот подключился к twitch")
 
@@ -190,7 +192,7 @@ def stream_status_loop():
         stream_online = is_stream_online()
 
         if stream_online and not stream_greeted:
-            sock.send(f"PRIVMSG {CHANNEL} :Здравствуйте, Нана. Хорошего стрима 🌸\r\n".encode())
+            sock.send(f"PRIVMSG {CHANNEL_IRC} :Здравствуйте, Нана. Хорошего стрима 🌸\r\n".encode())
             stream_greeted = True
 
         if not stream_online:
@@ -212,7 +214,7 @@ while True:
         sock.send("PONG :tmi.twitch.tv\r\n".encode())
         continue
 
-    if not stream_online or "PRIVMSG" not in data:
+    if "PRIVMSG" not in data:
         continue
 
     try:
