@@ -7,6 +7,7 @@ import os
 import re
 
 # ================= settings =================
+DEBUG_MODE = True
 
 CAPS_MIN_LETTERS = 24
 CAPS_PERCENT = 0.7
@@ -159,7 +160,7 @@ def announce_loop():
 
     while True:
         time.sleep(ANNOUNCE_INTERVAL)
-        if stream_online:
+        if stream_online or DEBUG_MODE:
 
             color = ANNOUNCE_COLORS[announce_color_index]
             
@@ -212,7 +213,7 @@ while True:
         sock.send("PONG :tmi.twitch.tv\r\n".encode())
         continue
 
-    if not stream_online or "PRIVMSG" not in data:
+    if (not stream_online and not DEBUG_MODE) or "PRIVMSG" not in data:
         continue
 
     try:
