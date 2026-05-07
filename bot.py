@@ -190,7 +190,7 @@ def stream_status_loop():
         stream_online = is_stream_online()
 
         if stream_online and not stream_greeted:
-            sock.send(f"PRIVMSG {CHANNEL} :Здравствуйте, Нана. Хорошего стрима 🌸 \r\n".encode())
+            sock.send(f"PRIVMSG {CHANNEL} :Здравствуйте, Нана. Хорошего стрима🌸 \r\n".encode())
             stream_greeted = True
 
         if not stream_online:
@@ -282,8 +282,8 @@ while True:
     elif msg == "!инстаграм":
         sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
     elif msg == "!фильм":
-        sock.send(f"PRIVMSG {CHANNEL} :Прогулки с динозаврами 1999 г. Документальный PopCorn\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :«Звёздная пыль» (Stardust, 2007) — американо-британский художественный фильм в жанре фэнтези, приключений и мелодрамы, экранизация одноимённого романа Нила Геймана. Режиссёр — Мэттью Вон.  PopCorn\r\n".encode())
     elif msg == "!кино":
-        sock.send(f"PRIVMSG {CHANNEL} :Прогулки с динозаврами 1999 г. Документальный PopCorn\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :«Звёздная пыль» (Stardust, 2007) — американо-британский художественный фильм в жанре фэнтези, приключений и мелодрамы, экранизация одноимённого романа Нила Геймана. Режиссёр — Мэттью Вон.  PopCorn\r\n".encode())
     elif msg == "!озвучка":
         sock.send(f"PRIVMSG {CHANNEL} :https://inlnk.ru/DB36GQ\r\n".encode())
