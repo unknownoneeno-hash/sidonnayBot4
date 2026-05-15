@@ -8,7 +8,7 @@ import re
 
 # ================= settings =================
 
-CAPS_MIN_LETTERS = 24
+CAPS_MIN_LETTERS = 68
 CAPS_PERCENT = 0.7
 CAPS_TIMEOUT = 60
 
