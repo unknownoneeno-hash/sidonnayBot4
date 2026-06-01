@@ -15,7 +15,9 @@ CAPS_TIMEOUT = 60
 WARN_RESET_TIME = 600
 BANNED_TIMEOUT = 600
 
-ANNOUNCE_TEXT = "tg t.me/sidonnay TehePelo"
+ANNOUNCE_TEXT = [ 
+    "tg t.me/sidonnay TehePelo"
+    "поддержать https://www.donationalerts.com/r/sidonnay"
 ANNOUNCE_INTERVAL = 450
 
 ANNOUNCE_COLORS = [
@@ -71,6 +73,7 @@ stream_online = False
 stream_greeted = False
 
 announce_color_index = 0
+announce_text_index = 0
 
 def reset_warns():
     while True:
@@ -156,12 +159,14 @@ def contains_banned(msg):
 
 def announce_loop():
     global announce_color_index
+    global announce_text_index
 
     while True:
         time.sleep(ANNOUNCE_INTERVAL)
         if stream_online:
 
             color = ANNOUNCE_COLORS[announce_color_index]
+            text = ANNOUNCE_TEXTS[announce_text_index]
             
             requests.post(
                 "https://api.twitch.tv/helix/chat/announcements",
@@ -177,6 +182,7 @@ def announce_loop():
             )
 
             announce_color_index = (announce_color_index + 1) % len(ANNOUNCE_COLORS)
+            announce_text_index = (announce_text_index + 1) % len(ANNOUNCE_TEXTS)
 
 threading.Thread(target=announce_loop, daemon=True).start()
 
