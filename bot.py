@@ -17,7 +17,7 @@ BANNED_TIMEOUT = 600
 
 ANNOUNCE_TEXTS = [ 
     "tg t.me/sidonnay TehePelo",
-    "поддержать https://www.donationalerts.com/r/sidonnay"
+    "поддержать https://www.donationalerts.com/r/sidonnay MorphinTime"
 ]
 ANNOUNCE_INTERVAL = 450
 
@@ -164,22 +164,24 @@ def announce_loop():
 
     while True:
         time.sleep(ANNOUNCE_INTERVAL)
+       
+        if stream_online:
         
-        color = ANNOUNCE_COLORS[announce_color_index]
-        text = ANNOUNCE_TEXTS[announce_text_index]
+          color = ANNOUNCE_COLORS[announce_color_index]
+          text = ANNOUNCE_TEXTS[announce_text_index]
             
-        requests.post(
-            "https://api.twitch.tv/helix/chat/announcements",
-            headers=HEADERS,
-            params={
-                "broadcaster_id": BROADCASTER_ID,
-                "moderator_id": MODERATOR_ID
-            },
-            json={
-                "message": text,
-                "color": color
-            }
-        )
+          requests.post(
+              "https://api.twitch.tv/helix/chat/announcements",
+              headers=HEADERS,
+              params={
+                  "broadcaster_id": BROADCASTER_ID,
+                  "moderator_id": MODERATOR_ID
+              },
+              json={
+                  "message": text,
+                  "color": color
+              }
+          )
 
         announce_color_index = (announce_color_index + 1) % len(ANNOUNCE_COLORS)
         announce_text_index = (announce_text_index + 1) % len(ANNOUNCE_TEXTS)
