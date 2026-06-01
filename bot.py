@@ -16,8 +16,8 @@ WARN_RESET_TIME = 600
 BANNED_TIMEOUT = 600
 
 ANNOUNCE_TEXTS = [ 
-    "💋 Мой телеграмм → t.me/sidonnay MyAvatar",
-    "💖 Поддержать стрим → donationalerts.com/r/sidonnay MorphinTime"
+    "💜 Мой телеграмм → t.me/sidonnay MyAvatar",
+    "🤍 Поддержать стрим → donationalerts.com/r/sidonnay MorphinTime"
 ]
 ANNOUNCE_INTERVAL = 360
 
