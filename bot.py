@@ -19,7 +19,7 @@ ANNOUNCE_TEXTS = [
     "tg t.me/sidonnay TehePelo",
     "поддержать https://www.donationalerts.com/r/sidonnay MorphinTime"
 ]
-ANNOUNCE_INTERVAL = 240
+ANNOUNCE_INTERVAL = 360
 
 ANNOUNCE_COLORS = [
     "purple",
