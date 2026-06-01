@@ -16,8 +16,8 @@ WARN_RESET_TIME = 600
 BANNED_TIMEOUT = 600
 
 ANNOUNCE_TEXTS = [ 
-    "tg t.me/sidonnay TehePelo",
-    "поддержать https://www.donationalerts.com/r/sidonnay MorphinTime"
+    "💋 Мой телеграмм → t.me/sidonnay MyAvatar",
+    "💖 Поддержать стрим → donationalerts.com/r/sidonnay MorphinTime"
 ]
 ANNOUNCE_INTERVAL = 360
 
@@ -264,34 +264,32 @@ while True:
     msg = message.lower().strip()
 
     if msg == "!tg":
-        sock.send(f"PRIVMSG {CHANNEL} :https://t.me/sidonnay\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💋\r\n".encode())
     elif msg == "!telegram":
-        sock.send(f"PRIVMSG {CHANNEL} :https://t.me/sidonnay\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💋\r\n".encode())
     elif msg == "!тг":
-        sock.send(f"PRIVMSG {CHANNEL} :https://t.me/sidonnay\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💋\r\n".encode())
     elif msg == "!телеграм":
-        sock.send(f"PRIVMSG {CHANNEL} :https://t.me/sidonnay\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💋\r\n".encode())
     elif msg == "!boosty":
-        sock.send(f"PRIVMSG {CHANNEL} :записи просмотровых https://boosty.to/sidonnay PopCorn\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :Записи просмотровых boosty.to/sidonnay 🎥\r\n".encode())
     elif msg == "!бусти":
-        sock.send(f"PRIVMSG {CHANNEL} :записи просмотровых https://boosty.to/sidonnay PopCorn\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :Записи просмотровых boosty.to/sidonnay 🎥\r\n".encode())
     elif msg == "!youtube":
-        sock.send(f"PRIVMSG {CHANNEL} :записи стримоу https://youtube.com/@sidonnay TPFufun\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :Записи стримоу youtube.com/@sidonnay 🎬\r\n".encode())
     elif msg == "!ютуб":
-        sock.send(f"PRIVMSG {CHANNEL} :записи стримоу https://youtube.com/@sidonnay TPFufun\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :Записи стримоу youtube.com/@sidonnay 🎬\r\n".encode())
     elif msg == "!instagram":
-        sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📸\r\n".encode())
     elif msg == "!inst":
-        sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📸\r\n".encode())
     elif msg == "!инст":
-        sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📸\r\n".encode())
     elif msg == "!инста":
-        sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📸\r\n".encode())
     elif msg == "!инстаграм":
-        sock.send(f"PRIVMSG {CHANNEL} :https://instagram.com/sidonnay MorphinTime\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📸\r\n".encode())
     elif msg == "!фильм":
-        sock.send(f"PRIVMSG {CHANNEL} :«Звёздная пыль» (Stardust, 2007) — американо-британский художественный фильм в жанре фэнтези, приключений и мелодрамы, экранизация одноимённого романа Нила Геймана. Режиссёр — Мэттью Вон.  PopCorn\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :Человек-паук 2 2004, фантастика, США, 127 мин, 12+ 🕷\r\n".encode())
     elif msg == "!кино":
-        sock.send(f"PRIVMSG {CHANNEL} :«Звёздная пыль» (Stardust, 2007) — американо-британский художественный фильм в жанре фэнтези, приключений и мелодрамы, экранизация одноимённого романа Нила Геймана. Режиссёр — Мэттью Вон.  PopCorn\r\n".encode())
-    elif msg == "!озвучка":
-        sock.send(f"PRIVMSG {CHANNEL} :https://inlnk.ru/DB36GQ\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :Человек-паук 2 2004, фантастика, США, 127 мин, 12+ 🕷\r\n".encode())
