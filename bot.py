@@ -267,13 +267,13 @@ while True:
     msg = message.lower().strip()
 
     if msg == "!tg":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💋\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 🩵\r\n".encode())
     elif msg == "!telegram":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💋\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 🩵\r\n".encode())
     elif msg == "!тг":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💋\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 🩵\r\n".encode())
     elif msg == "!телеграм":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💋\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 🩵\r\n".encode())
     elif msg == "!boosty":
         sock.send(f"PRIVMSG {CHANNEL} :Записи просмотровых boosty.to/sidonnay 🎥\r\n".encode())
     elif msg == "!бусти":
@@ -283,15 +283,15 @@ while True:
     elif msg == "!ютуб":
         sock.send(f"PRIVMSG {CHANNEL} :Записи стримоу youtube.com/@sidonnay 🎬\r\n".encode())
     elif msg == "!instagram":
-        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📸\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📷\r\n".encode())
     elif msg == "!inst":
-        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📸\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📷\r\n".encode())
     elif msg == "!инст":
-        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📸\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📷\r\n".encode())
     elif msg == "!инста":
-        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📸\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📷\r\n".encode())
     elif msg == "!инстаграм":
-        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📸\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📷\r\n".encode())
     elif msg == "!фильм":
         sock.send(f"PRIVMSG {CHANNEL} :Человек-паук 2 2004, фантастика, США, 127 мин, 12+ 🕷\r\n".encode())
     elif msg == "!кино":
