@@ -16,10 +16,10 @@ WARN_RESET_TIME = 600
 BANNED_TIMEOUT = 600
 
 ANNOUNCE_TEXTS = [ 
-    "tg t.me/sidonnay TehePelo"
+    "tg t.me/sidonnay TehePelo",
     "поддержать https://www.donationalerts.com/r/sidonnay"
 ]
-ANNOUNCE_INTERVAL = 450
+ANNOUNCE_INTERVAL = 45
 
 ANNOUNCE_COLORS = [
     "purple",
