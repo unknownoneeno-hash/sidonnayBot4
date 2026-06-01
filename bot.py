@@ -163,7 +163,7 @@ def announce_loop():
 
     while True:
         time.sleep(ANNOUNCE_INTERVAL)
-        if stream_online:
+        #if stream_online:
 
             color = ANNOUNCE_COLORS[announce_color_index]
             text = ANNOUNCE_TEXTS[announce_text_index]
