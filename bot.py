@@ -18,6 +18,7 @@ BANNED_TIMEOUT = 600
 ANNOUNCE_TEXT = [ 
     "tg t.me/sidonnay TehePelo"
     "поддержать https://www.donationalerts.com/r/sidonnay"
+]
 ANNOUNCE_INTERVAL = 450
 
 ANNOUNCE_COLORS = [
