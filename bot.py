@@ -17,7 +17,7 @@ BANNED_TIMEOUT = 600
 
 ANNOUNCE_TEXTS = [ 
     "💜 Мой телеграмм → t.me/sidonnay MyAvatar",
-    "🤍 Поддержать стрим → donationalerts.com/r/sidonnay MorphinTime"
+    "💙 Поддержать стрим → donationalerts.com/r/sidonnay MorphinTime"
 ]
 ANNOUNCE_INTERVAL = 360
 
@@ -267,13 +267,13 @@ while True:
     msg = message.lower().strip()
 
     if msg == "!tg":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 🩵\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💚\r\n".encode())
     elif msg == "!telegram":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 🩵\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💚\r\n".encode())
     elif msg == "!тг":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 🩵\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💚\r\n".encode())
     elif msg == "!телеграм":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 🩵\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💚\r\n".encode())
     elif msg == "!boosty":
         sock.send(f"PRIVMSG {CHANNEL} :Записи просмотровых boosty.to/sidonnay 🎥\r\n".encode())
     elif msg == "!бусти":
