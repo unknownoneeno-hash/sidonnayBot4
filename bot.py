@@ -208,7 +208,7 @@ def stream_status_loop():
         stream_online = True if TEST_MODE else is_stream_online()
 
         if stream_online and not stream_greeted:
-            sock.send(f"PRIVMSG {CHANNEL} :Здравствуйте, Нана. Хорошего стрима🌸 \r\n".encode())
+            sock.send(f"PRIVMSG {CHANNEL} :🌸 \r\n".encode())
             stream_greeted = True
 
         if not stream_online:
@@ -224,9 +224,10 @@ while True:
     try:
         data = sock.recv(2048).decode("utf-8", errors="ignore")
         print("TWITCH:", repr(data))
-    except socket.timeout:
-        continue
 
+    except (socket.timeout, BlockingIOError):
+        continue
+        
     if data.startswith("PING"):
         sock.send("PONG :tmi.twitch.tv\r\n".encode())
         continue
