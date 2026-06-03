@@ -12,6 +12,8 @@ CAPS_MIN_LETTERS = 68
 CAPS_PERCENT = 0.7
 CAPS_TIMEOUT = 60
 
+TEST_MODE = True
+
 WARN_RESET_TIME = 600
 BANNED_TIMEOUT = 600
 
@@ -19,7 +21,7 @@ ANNOUNCE_TEXTS = [
     "💜 Мой телеграмм → t.me/sidonnay MyAvatar",
     "💙 Поддержать стрим → donationalerts.com/r/sidonnay MorphinTime"
 ]
-ANNOUNCE_INTERVAL = 360
+ANNOUNCE_INTERVAL = 60
 
 ANNOUNCE_COLORS = [
     "purple",
@@ -198,7 +200,7 @@ def stream_status_loop():
     global stream_greeted
 
     while True:
-        stream_online = is_stream_online()
+        stream_online = True if TEST_MODE else is_stream_online()
 
         if stream_online and not stream_greeted:
             sock.send(f"PRIVMSG {CHANNEL} :Здравствуйте, Нана. Хорошего стрима🌸 \r\n".encode())
