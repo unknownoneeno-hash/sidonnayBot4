@@ -12,7 +12,7 @@ CAPS_MIN_LETTERS = 68
 CAPS_PERCENT = 0.7
 CAPS_TIMEOUT = 60
 
-TEST_MODE = True
+TEST_MODE = False
 
 WARN_RESET_TIME = 600
 BANNED_TIMEOUT = 600
@@ -21,7 +21,7 @@ ANNOUNCE_TEXTS = [
     "💜 Мой телеграмм → t.me/sidonnay MyAvatar",
     "💙 Поддержать стрим → donationalerts.com/r/sidonnay MorphinTime"
 ]
-ANNOUNCE_INTERVAL = 30
+ANNOUNCE_INTERVAL = 360
 
 ANNOUNCE_COLORS = [
     "purple",
