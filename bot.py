@@ -174,6 +174,8 @@ def announce_loop():
         
            color = ANNOUNCE_COLORS[announce_color_index]
            text = ANNOUNCE_TEXTS[announce_text_index]
+
+           print("пытаюсь отправить анонс:", text)
             
            requests.post(
                "https://api.twitch.tv/helix/chat/announcements",
@@ -187,6 +189,9 @@ def announce_loop():
                    "color": color
                }
            )
+
+           print("статус twitch api:", response.status_code)
+           print("ответ twitch:", response.text)
 
         announce_color_index = (announce_color_index + 1) % len(ANNOUNCE_COLORS)
         announce_text_index = (announce_text_index + 1) % len(ANNOUNCE_TEXTS)
