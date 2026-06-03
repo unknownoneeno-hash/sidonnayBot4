@@ -19,7 +19,7 @@ ANNOUNCE_TEXTS = [
     "💜 Мой телеграмм → t.me/sidonnay MyAvatar",
     "💙 Поддержать стрим → donationalerts.com/r/sidonnay MorphinTime"
 ]
-ANNOUNCE_INTERVAL = 360
+ANNOUNCE_INTERVAL = 60
 
 ANNOUNCE_COLORS = [
     "purple",
@@ -168,23 +168,22 @@ def announce_loop():
     while True:
         time.sleep(ANNOUNCE_INTERVAL)
        
-        if stream_online:
         
-           color = ANNOUNCE_COLORS[announce_color_index]
-           text = ANNOUNCE_TEXTS[announce_text_index]
+        color = ANNOUNCE_COLORS[announce_color_index]
+        text = ANNOUNCE_TEXTS[announce_text_index]
             
-           requests.post(
-               "https://api.twitch.tv/helix/chat/announcements",
-               headers=HEADERS,
-               params={
-                   "broadcaster_id": BROADCASTER_ID,
-                   "moderator_id": MODERATOR_ID
-               },
-               json={
-                   "message": text,
-                   "color": color
-               }
-           )
+        requests.post(
+            "https://api.twitch.tv/helix/chat/announcements",
+             headers=HEADERS,
+             params={
+               "broadcaster_id": BROADCASTER_ID,
+               "moderator_id": MODERATOR_ID
+             },
+             json={
+                 "message": text,
+                 "color": color
+            }
+        )
 
         announce_color_index = (announce_color_index + 1) % len(ANNOUNCE_COLORS)
         announce_text_index = (announce_text_index + 1) % len(ANNOUNCE_TEXTS)
