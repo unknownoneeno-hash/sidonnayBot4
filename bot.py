@@ -177,7 +177,7 @@ def announce_loop():
 
            print("пытаюсь отправить анонс:", text)
             
-           requests.post(
+           response = requests.post(
                "https://api.twitch.tv/helix/chat/announcements",
                headers=HEADERS,
                params={
