@@ -216,6 +216,7 @@ threading.Thread(target=stream_status_loop, daemon=True).start()
 while True:
     try:
         data = sock.recv(2048).decode("utf-8", errors="ignore")
+        print("TWITCH:", repr(data))
     except socket.timeout:
         continue
 
