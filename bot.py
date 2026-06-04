@@ -21,7 +21,7 @@ ANNOUNCE_TEXTS = [
     "💜 Мой телеграмм → t.me/sidonnay MyAvatar",
     "💙 Поддержать стрим → donationalerts.com/r/sidonnay MorphinTime"
 ]
-ANNOUNCE_INTERVAL = 360
+ANNOUNCE_INTERVAL = 30
 
 ANNOUNCE_COLORS = [
     "purple",
