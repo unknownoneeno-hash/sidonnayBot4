@@ -302,6 +302,6 @@ while True:
     elif msg == "!инстаграм":
         sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📷\r\n".encode())
     elif msg == "!фильм":
-        sock.send(f"PRIVMSG {CHANNEL} :Человек-паук 2 2004, фантастика, США, 127 мин, 12+ 🕷\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :Новый Человек-паук 2012, фантастика, США, 131 мин, 12+ 🕷\r\n".encode())
     elif msg == "!кино":
-        sock.send(f"PRIVMSG {CHANNEL} :Человек-паук 2 2004, фантастика, США, 127 мин, 12+ 🕷\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :Новый Человек-паук 2012, фантастика, США, 131 мин, 12+ 🕷\r\n".encode())
