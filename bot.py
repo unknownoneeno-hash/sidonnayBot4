@@ -284,6 +284,10 @@ while True:
         sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💚\r\n".encode())
     elif msg == "!телеграм":
         sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💚\r\n".encode())
+    elif msg == "!чокопай":
+        sock.send(f"PRIVMSG {CHANNEL} :Канал choco314e c нарезками и шортсами youtube.com/@choco314e 🎥\r\n".encode())
+    elif msg == "!choco314e":
+        sock.send(f"PRIVMSG {CHANNEL} :Канал choco314e c нарезками и шортсами youtube.com/@choco314e 🎥\r\n".encode())
     elif msg == "!boosty":
         sock.send(f"PRIVMSG {CHANNEL} :Записи просмотровых boosty.to/sidonnay 🎥\r\n".encode())
     elif msg == "!бусти":
