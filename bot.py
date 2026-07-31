@@ -277,13 +277,13 @@ while True:
     msg = message.lower().strip()
 
     if msg == "!tg":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💚\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay\r\n".encode())
     elif msg == "!telegram":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💚\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay\r\n".encode())
     elif msg == "!тг":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💚\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay\r\n".encode())
     elif msg == "!телеграм":
-        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay 💚\r\n".encode())
+        sock.send(f"PRIVMSG {CHANNEL} :t.me/sidonnay\r\n".encode())
     elif msg == "!чокопай":
         sock.send(f"PRIVMSG {CHANNEL} :Канал choco314e c нарезками и шортсами youtube.com/@choco314e 🎥\r\n".encode())
     elif msg == "!choco314e":
