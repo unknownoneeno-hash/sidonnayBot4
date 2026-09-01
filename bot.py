@@ -306,6 +306,8 @@ while True:
         sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📷\r\n".encode())
     elif msg == "!инстаграм":
         sock.send(f"PRIVMSG {CHANNEL} :instagram.com/sidonnay 📷\r\n".encode())
+    elif msg == "!судимости":
+        sock.send(f"PRIVMSG {CHANNEL} :158 УК РФ: Кража сырков в особо крупном размере. Была поймана с поличным с порваными подмышками.\r\n".encode())
     elif msg == "!фильм":
         sock.send(f"PRIVMSG {CHANNEL} :Царство Небесное (режиссерская версия) 2005, боевик, драма, военный, история, США, Испания, 3 ч 8 мин, 18+\r\n".encode())
     elif msg == "!кино":
