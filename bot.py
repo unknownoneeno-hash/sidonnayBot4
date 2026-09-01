@@ -19,7 +19,7 @@ BANNED_TIMEOUT = 600
 
 ANNOUNCE_TEXTS = [ 
     "Мой телеграмм → t.me/sidonnay MyAvatar",
-    "Поддержать стрим → donationalerts.com/r/sidonnay MorphinTime"
+    "Поддержать стрим и закрыть сбор на игрушку Тузю → donationalerts.com/r/sidonnay MorphinTime"
 ]
 ANNOUNCE_INTERVAL = 360
 
